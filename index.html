@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Список услуг</title>
+</head>
+
+<body>
+    <h1></h1>
+    <table border="1" width="500px">
+        <tr>
+            <th>Услуга</th>
+            <th>Стоимость</th>
+            <th>Действие</th>
+        </tr>
+        {%for i in range(0, len)%}
+            <tr>
+                <td>{{data[i][0].text or ""}}</td>
+                <td>{{data[i][1].text or ""}}</td>
+                <td><a href="/delete/{{i}}">Удалить</a></td>
+            </tr>
+        {%endfor%}
+    </table>
+    <br/>
+    <form action="/insert" method="post">
+        <label>Услуга</label><br>
+        <input name="service"><br>
+
+        <label>Стоимость</label><br>
+        <input name="price"><br>
+        <br>
+        <input type="submit" value="Добавить">
+    </form>
+</body>
+
+</html>

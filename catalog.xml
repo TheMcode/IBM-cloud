@@ -1,0 +1,29 @@
+<catalog>
+    <server>
+        <service>Виртуальная инфраструктура IaaS</service>
+        <price>150000</price>
+    </server>
+        <server>
+        <service>Облако на базе OpenStack</service>
+        <price>180000</price>
+    </server>
+        <server>
+        <service>Катастрофоустойчивое облако</service>
+        <price>210000</price>
+    </server>
+        <server>
+        <service>Облако на базе Hyper-V</service>
+        <price>195000</price>
+    </server>
+        <server>
+        <service>Глобальный балансировщик нагрузки</service>
+        <price>145000</price>
+    </server>
+        <server>
+        <service>Резервное копирование виртульных машин</service>
+        <price>300000</price>
+    </server>
+        <service>Базы данных в облаке</service>
+        <price>170000</price>
+    </server>
+</catalog>
